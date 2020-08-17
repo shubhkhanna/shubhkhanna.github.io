@@ -1,3 +1,5 @@
+// Add scrollspy to <body>
+$("body").scrollspy({ target: ".navbar", offset: 50 });
 // Smooth Scrolling
 $("#main-nav a").on("click", function (event) {
   if (this.hash !== "") {
