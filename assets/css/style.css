@@ -1,9 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600&display=swap");
+
 html,
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #fff;
+}
+p {
+  font-size: 1.1em;
+  font-family: "Lato", sans-serif;
 }
 
 /* Prelaoder */
@@ -23,11 +28,11 @@ body {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 4px dashed #f2f2f2;
-  border-top: 4px dashed red;
+  border: 3px solid #ecf0f3;
+  border-top: 3px solid orangered;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
 }
@@ -150,4 +155,34 @@ body {
   to {
     opacity: 1;
   }
+}
+
+/* Line through */
+.head {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: auto;
+  font-family: "Noto", sans-serif;
+}
+.head:before,
+.head:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #000;
+  margin: auto;
+}
+.head:before {
+  margin-right: 10px;
+}
+.head:after {
+  margin-left: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .head {
+    width: 80%;
+  }
+}
+#about {
+  background-color: rgba(238, 238, 238, 0.151);
 }

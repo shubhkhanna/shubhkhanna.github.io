@@ -22,7 +22,7 @@ $("#main-nav a").on("click", function (event) {
 $(window).on("load", function () {
   if ($("#preloader").length) {
     $("#preloader")
-      .delay(800)
+      .delay(700)
       .fadeOut("slow", function () {
         $(this).remove();
       });
