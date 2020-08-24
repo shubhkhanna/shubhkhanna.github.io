@@ -1,5 +1,7 @@
 eva.replace();
-AOS.init();
+AOS.init({
+  once: true,
+});
 // Add scrollspy to <body>
 $("body").scrollspy({ target: ".navbar", offset: 50 });
 // Smooth Scrolling
