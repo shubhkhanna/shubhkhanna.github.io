@@ -40,7 +40,7 @@ $(window).scroll(function () {
   } else {
     $(".fixed-top").css({
       background: "white",
-      "box-shadow": "0px 1px 1px #292b2c20",
+      "box-shadow": "0px 1px 4px #292b2c20",
     });
   }
 });
