@@ -346,3 +346,11 @@ a.btn.btn-primary.resume:focus {
   outline: none;
   box-shadow: none;
 }
+
+/* Progress Bar */
+.progress {
+  height: 0.3em;
+}
+.progress-bar {
+  background-color: #191919;
+}
