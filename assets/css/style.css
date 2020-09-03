@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@600&display=swap");
 
-html,
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+} 
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
