@@ -8,7 +8,7 @@ html {
 ::-webkit-scrollbar {
   width: 0px;
   display: none;
-} 
+}
 
 body {
   margin: 0;
@@ -177,7 +177,10 @@ p {
   }
 }
 
-section {
+#about,
+#skills,
+#education,
+#experience {
   min-height: 500px;
 }
 
