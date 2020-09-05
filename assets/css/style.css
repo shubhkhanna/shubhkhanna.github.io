@@ -29,10 +29,26 @@ p {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #070707;
+  background: #fff;
 }
 
-#preloader:before {
+#preloader img {
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  animation: fadeInAnimation ease-in 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*#preloader:before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -68,7 +84,7 @@ p {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
+} */
 
 /* Navbar */
 .navbar {
@@ -165,7 +181,7 @@ p {
   position: absolute;
   border-radius: 20px;
   bottom: 0;
-  left: 14%;
+  left: 12%;
   width: 70%;
   height: 2px;
   background-color: #3e64ff;
@@ -177,9 +193,9 @@ p {
   }
 }
 
+#home,
 #about,
 #skills,
-#education,
 #experience {
   min-height: 500px;
 }
