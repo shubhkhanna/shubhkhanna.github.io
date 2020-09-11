@@ -193,11 +193,8 @@ p {
   }
 }
 
-#home,
-#about,
-#skills,
 #experience {
-  min-height: 500px;
+  min-height: 300px;
 }
 
 /* Home Overlay */
