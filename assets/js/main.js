@@ -26,7 +26,7 @@ $("#main-nav a").on("click", function (event) {
 $(window).on("load", function () {
   if ($("#preloader").length) {
     $("#preloader")
-      .delay(1200)
+      .delay(1500)
       .fadeOut("slow", function () {
         $(this).remove();
       });

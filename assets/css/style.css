@@ -36,7 +36,7 @@ p {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  animation: fadeInAnimation ease-in 1s;
+  animation: fadeInAnimation ease-in 0.8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
