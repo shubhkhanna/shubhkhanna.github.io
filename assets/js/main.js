@@ -151,7 +151,7 @@ const showCards = () => {
         <div class="card alert alert-success border-success">
           <div class="card-body p-0">            
             <h3 class="card-title">${projectName}</h3>
-            <p class="text-muted">Created on ${createdOn}</p>
+            <p class="text-muted card-text">Created on ${createdOn}</p>
             <p class="card-text">${description}</p>
             <a href="${htmlUrl}" class="float-left" target="_blank" style="text-decoration: none;">View Project &#8594;</a>
           </div>
