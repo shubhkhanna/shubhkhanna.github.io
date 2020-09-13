@@ -104,3 +104,61 @@ window.onload = function () {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
+
+//Projects Cards
+const addCards = document.querySelector(".addCards");
+const Cards = [
+  {
+    createdOn: "11-05-2020",
+    projectName: "COVID-India-Live",
+    description: "Tracking COVID-19 cases across the globe.",
+    htmlUrl: "https://github.com/shubhkhanna/COVID-India-Live",
+  },
+  {
+    createdOn: "07-09-2020",
+    projectName: "random-api",
+    description: "REST API build with node.js and deployed on Azure.",
+    htmlUrl: "https://github.com/shubhkhanna/random-api",
+  },
+  {
+    createdOn: "29-07-2020",
+    projectName: "firebase-githubapp",
+    description: "A React based Web App which provide details of GitHub Users.",
+    htmlUrl: "https://github.com/shubhkhanna/firebase-githubapp",
+  },
+
+  {
+    createdOn: "20-06-2020",
+    projectName: "Django-NewsApp",
+    description:
+      "A Django based News Web App which uses Google News API to provide Latest News.",
+    htmlUrl: "https://github.com/shubhkhanna/Django-NewsApp",
+  },
+  {
+    createdOn: "08-08-2020",
+    projectName: "mailing-client",
+    description: "A Python script for sending mails.",
+    htmlUrl: "https://github.com/shubhkhanna/mailing-client",
+  },
+];
+
+const showCards = () => {
+  let output = "";
+  Cards.forEach(
+    ({ createdOn, projectName, description, htmlUrl }) =>
+      (output += `        
+      <div class="col-md-6 mb-3 px-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+        <div class="card alert alert-success border-success">
+          <div class="card-body p-0">
+            <span class="text-muted float-right" style="line-height: 2;">Created on ${createdOn}</span>
+            <h3 class="card-title">${projectName}</h3>
+            <p class="card-text">${description}</p>
+            <a href="${htmlUrl}" class="float-left" target="_blank" style="text-decoration: none;">View Project &#8594;</a>
+          </div>
+        </div>
+      </div>     
+      `)
+  );
+  addCards.innerHTML = output;
+};
+document.addEventListener("DOMContentLoaded", showCards);
