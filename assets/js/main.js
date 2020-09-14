@@ -150,8 +150,8 @@ const showCards = () => {
       <div class="col-md-6 mb-3 px-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
         <div class="card alert alert-success border-success">
           <div class="card-body p-0">            
-            <h3 class="card-title">${projectName}</h3>
-            <p class="text-muted card-text">Created on ${createdOn}</p>
+            <h3 class="card-title mb-1">${projectName}</h3>
+            <p class="text-muted card-text m-0 pb-1">Created on ${createdOn}</p>
             <p class="card-text">${description}</p>
             <a href="${htmlUrl}" class="float-left" target="_blank" style="text-decoration: none;">View Project &#8594;</a>
           </div>
