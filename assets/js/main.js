@@ -116,13 +116,13 @@ const Cards = [
   },
   {
     createdOn: "07-09-2020",
-    projectName: "random-api",
+    projectName: "Random-API",
     description: "REST API build with node.js and deployed on Azure.",
     htmlUrl: "https://github.com/shubhkhanna/random-api",
   },
   {
     createdOn: "29-07-2020",
-    projectName: "firebase-githubapp",
+    projectName: "Firebase-githubapp",
     description: "A React based Web App which provide details of GitHub Users.",
     htmlUrl: "https://github.com/shubhkhanna/firebase-githubapp",
   },
@@ -136,7 +136,7 @@ const Cards = [
   },
   {
     createdOn: "08-08-2020",
-    projectName: "mailing-client",
+    projectName: "Mailing-client",
     description: "A Python script for sending mails.",
     htmlUrl: "https://github.com/shubhkhanna/mailing-client",
   },
@@ -147,9 +147,9 @@ const showCards = () => {
   Cards.forEach(
     ({ createdOn, projectName, description, htmlUrl }) =>
       (output += `        
-      <div class="col-md-6 mb-3 px-2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
-        <div class="card alert alert-success border-success">
-          <div class="card-body p-0">            
+      <div class="col-md-6 pb-4 px-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
+        <div class="card shadow">
+          <div class="card-body">            
             <h3 class="card-title mb-1">${projectName}</h3>
             <p class="text-muted card-text m-0 pb-1">Created on ${createdOn}</p>
             <p class="card-text">${description}</p>

@@ -359,3 +359,8 @@ a.btn.btn-primary.resume:focus {
   display: flex;
   flex-wrap: wrap;
 }
+
+.card {
+  border-radius: 10px;
+  border-top: 4px solid #3e64ff;
+}
