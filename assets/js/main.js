@@ -140,6 +140,12 @@ const Cards = [
     description: "A Python script for sending mails.",
     htmlUrl: "https://github.com/shubhkhanna/mailing-client",
   },
+  {
+    createdOn: "27-09-2020",
+    projectName: "Cutly",
+    description: "URL Shortener built with Nodejs and MongoDB.",
+    htmlUrl: "https://github.com/shubhkhanna/cutly",
+  },
 ];
 
 const showCards = () => {
