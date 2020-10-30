@@ -116,13 +116,13 @@ const Cards = [
   },
   {
     createdOn: "07-09-2020",
-    projectName: "Random-API",
-    description: "REST API build with node.js and deployed on Azure.",
+    projectName: "Random-data",
+    description: "REST API built with node.js and deployed on Azure.",
     htmlUrl: "https://github.com/shubhkhanna/random-api",
   },
   {
     createdOn: "29-07-2020",
-    projectName: "Firebase-githubapp",
+    projectName: "GitHub Finder",
     description: "A React based Web App which provide details of GitHub Users.",
     htmlUrl: "https://github.com/shubhkhanna/firebase-githubapp",
   },
@@ -142,9 +142,9 @@ const Cards = [
   },
   {
     createdOn: "27-09-2020",
-    projectName: "Cutly",
+    projectName: "Cutit",
     description: "URL Shortener built with Nodejs and MongoDB.",
-    htmlUrl: "https://github.com/shubhkhanna/cutly",
+    htmlUrl: "https://github.com/shubhkhanna/cutit",
   },
 ];
 
