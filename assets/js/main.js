@@ -109,56 +109,49 @@ window.onload = function () {
 const addCards = document.querySelector(".addCards");
 const Cards = [
   {
-    createdOn: "11-05-2020",
     projectName: "COVID-India-Live",
     description: "Tracking COVID-19 cases across the globe.",
     htmlUrl: "https://github.com/shubhkhanna/COVID-India-Live",
   },
   {
-    createdOn: "07-09-2020",
-    projectName: "Random-data",
-    description: "REST API built with node.js and deployed on Azure.",
-    htmlUrl: "https://github.com/shubhkhanna/random-api",
+    projectName: "AI-News-App",
+    description:
+      "A React based Web App built with integration of Conversational Voice AI.",
+    htmlUrl: "https://github.com/shubhkhanna/AI-News-App",
   },
   {
-    createdOn: "29-07-2020",
+    projectName: "Cutit",
+    description: "URL Shortener built with Nodejs and MongoDB.",
+    htmlUrl: "https://github.com/shubhkhanna/cutit",
+  },
+  {
     projectName: "GitHub Finder",
     description: "A React based Web App which provide details of GitHub Users.",
     htmlUrl: "https://github.com/shubhkhanna/firebase-githubapp",
   },
-
   {
-    createdOn: "20-06-2020",
     projectName: "Django-NewsApp",
     description:
       "A Django based News Web App which uses Google News API to provide Latest News.",
     htmlUrl: "https://github.com/shubhkhanna/Django-NewsApp",
   },
   {
-    createdOn: "08-08-2020",
     projectName: "Mailing-client",
     description: "A Python script for sending mails.",
     htmlUrl: "https://github.com/shubhkhanna/mailing-client",
-  },
-  {
-    createdOn: "27-09-2020",
-    projectName: "Cutit",
-    description: "URL Shortener built with Nodejs and MongoDB.",
-    htmlUrl: "https://github.com/shubhkhanna/cutit",
   },
 ];
 
 const showCards = () => {
   let output = "";
   Cards.forEach(
-    ({ createdOn, projectName, description, htmlUrl }) =>
+    ({ projectName, description, htmlUrl }) =>
       (output += `        
       <div class="col-md-6 pb-4 px-3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="900">
-        <div class="card shadow">
+        <div class="card shadow-sm">
           <div class="card-body">            
-            <h3 class="card-title mb-1">${projectName}</h3>
-            <p class="text-muted card-text m-0 pb-1">Created on ${createdOn}</p>
-            <p class="card-text">${description}</p>
+            <h3 class="card-title mb-1">${projectName}</h3>          
+            <p class="card-text" style="opacity: 0.7;font-size: 1rem;">${description}</p>
             <a href="${htmlUrl}" class="float-left" target="_blank" style="text-decoration: none;">View Project &#8594;</a>
           </div>
         </div>
