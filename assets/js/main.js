@@ -109,6 +109,11 @@ window.onload = function () {
 const addCards = document.querySelector(".addCards");
 const Cards = [
   {
+    projectName: "Contact Manager",
+    description: "MERN Stack based Contact Manager web app that has CRUD functionality and a user authentication system.",
+    htmlUrl: "https://github.com/shubhkhanna/contact-manager",
+  },
+  {
     projectName: "COVID-India-Live",
     description: "Tracking COVID-19 cases across the globe.",
     htmlUrl: "https://github.com/shubhkhanna/COVID-India-Live",
@@ -134,12 +139,7 @@ const Cards = [
     description:
       "A Django based News Web App which uses Google News API to provide Latest News.",
     htmlUrl: "https://github.com/shubhkhanna/Django-NewsApp",
-  },
-  {
-    projectName: "Mailing-client",
-    description: "A Python script for sending mails.",
-    htmlUrl: "https://github.com/shubhkhanna/mailing-client",
-  },
+  },  
 ];
 
 const showCards = () => {
