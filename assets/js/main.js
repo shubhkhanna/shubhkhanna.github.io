@@ -114,16 +114,16 @@ const Cards = [
     htmlUrl: "https://github.com/shubhkhanna/contact-manager",
   },
   {
-    projectName: "COVID-India-Live",
-    description: "Tracking COVID-19 cases across the globe.",
-    htmlUrl: "https://github.com/shubhkhanna/COVID-India-Live",
-  },
-  {
     projectName: "AI-News-App",
     description:
       "A React based Web App built with integration of Conversational Voice AI.",
     htmlUrl: "https://github.com/shubhkhanna/AI-News-App",
   },
+  {
+    projectName: "COVID-India-Live",
+    description: "Tracking COVID-19 cases across the globe.",
+    htmlUrl: "https://github.com/shubhkhanna/COVID-India-Live",
+  },  
   {
     projectName: "Cutit",
     description: "URL Shortener built with Nodejs and MongoDB.",
